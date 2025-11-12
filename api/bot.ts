@@ -3,8 +3,7 @@ import WebSocket from "ws";
 import axios from "axios";
 import { tokenCache } from "./callback.js";
 
-// langsung isi manual
-const CHANNEL_ID = "feuskasv"; // nama channel kamu
+const CHANNEL_ID = "feuskasv"; // ganti ke nama channel kamu
 const API_CHAT = `https://kick.com/api/v2/messages/send/${CHANNEL_ID}`;
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
@@ -53,4 +52,3 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   res.send("🤖 Bot started and listening to chat...");
 }
-
