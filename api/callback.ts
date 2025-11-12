@@ -21,12 +21,11 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     });
 
     tokenCache = response.data.access_token;
-    console.log("✅ Access Token received:", tokenCache);
+    console.log("✅ Access token:", tokenCache);
 
     res.send("✅ Authorization successful! You can now start your bot at /api/bot");
   } catch (err: any) {
-    console.error("Error exchanging code:", err.response?.data || err.message);
-    res.status(500).send("❌ Error getting access token");
+    console.error("❌ Error exchanging code:", err.response?.data || err.message);
+    res.status(500).send("Error getting token");
   }
 }
-
