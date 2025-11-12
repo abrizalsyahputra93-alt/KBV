@@ -1,9 +1,16 @@
 {
   "name": "kick-bot-vercel",
   "version": "1.0.0",
-  "main": "api/bot.ts",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "vercel dev"
+  },
   "dependencies": {
-    "axios": "^1.6.2",
-    "ws": "^8.15.0"
+    "axios": "^1.6.8"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.12",
+    "typescript": "^5.2.2"
   }
 }
