@@ -5,7 +5,7 @@ export let tokenCache = "";
 
 const CLIENT_ID = "01K9SEDGKEAB4KH7WAJ8Q2XGVD";
 const CLIENT_SECRET = "8fe491a2b6fe3949673e9228d824efb477a90de7425c8b8f8a564ecb039a2225";
-const REDIRECT_URI = "https://kbv-2tq3.vercel.app/api/callback";
+const REDIRECT_URI = "https://kbv-xuse.vercel.app//api/callback";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   const code = req.query.code as string;
