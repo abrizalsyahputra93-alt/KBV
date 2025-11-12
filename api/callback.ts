@@ -3,8 +3,8 @@ import axios from "axios";
 
 export let tokenCache = "";
 
-const CLIENT_ID = "01K9RZ3A2G1PTZ8FSA65ZH3VXZ";
-const CLIENT_SECRET = "4f1c2575f4d923121cfc0a713d45ee4150b086690f8da472b7f025a47c9cd8f5";
+const CLIENT_ID = "01K9SEDGKEAB4KH7WAJ8Q2XGVD";
+const CLIENT_SECRET = "8fe491a2b6fe3949673e9228d824efb477a90de7425c8b8f8a564ecb039a2225";
 const REDIRECT_URI = "https://yourproject.vercel.app/api/callback";
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
