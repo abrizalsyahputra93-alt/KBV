@@ -1,6 +1,6 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
 
-const CLIENT_ID = "01K9RZ3A2G1PTZ8FSA65ZH3VXZ";
+const CLIENT_ID = "01K9SEDGKEAB4KH7WAJ8Q2XGVD";
 const REDIRECT_URI = "https://yourproject.vercel.app/api/callback"; // ganti sesuai domain vercel kamu
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
